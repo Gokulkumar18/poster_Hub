@@ -1,0 +1,1601 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    scrollbar-width: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* =========================================================
+   ANNOUNCEMENT BAR
+========================================================= */
+
+.announcement {
+    width: 100%;
+    min-height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111;
+    color: white;
+
+    padding: 8px 15px;
+
+    text-align: center;
+}
+
+.announcement p {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   MAIN NAVIGATION
+========================================================= */
+
+.nav,
+.navigation {
+    width: 100%;
+    min-height: 115px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 10px 40px;
+
+    background-color: rgb(225, 213, 213);
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    width: 280px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* PERFECT CIRCLE */
+
+.logo_image {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.logo_image img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* LOGO NAME */
+
+.logo_name {
+    white-space: nowrap;
+}
+
+.logo_name h1 {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo_name p {
+    margin-top: 3px;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    font-weight: bold;
+}
+
+.logo_name p span {
+    color: #777;
+}
+
+
+/* =========================================================
+   MENU
+========================================================= */
+
+.menu {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* TOP MENU */
+
+.top-menu,
+.bottom-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* TOP MENU */
+
+.top-menu {
+    flex-wrap: wrap;
+}
+
+
+/* BOTTOM MENU */
+
+.bottom-menu {
+    gap: 25px;
+}
+
+
+/* MENU LINKS */
+
+.menu a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #777;
+}
+
+
+/* =========================================================
+   ICONS
+========================================================= */
+
+.icons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-shrink: 0;
+}
+
+.icons span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i {
+    font-size: 21px;
+
+    transition: 0.3s;
+}
+
+.icons span:hover i {
+    transform: scale(1.2);
+}
+
+
+/* =========================================================
+   POPULAR CATEGORIES
+========================================================= */
+
+.popular {
+    width: 100%;
+    min-height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 8px 20px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #ddd;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+}
+
+.popular::-webkit-scrollbar {
+    display: none;
+}
+
+.popular span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.popular a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.popular a:hover {
+    color: #777;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+========================================================= */
+
+main {
+    width: 100%;
+}
+
+main section {
+    width: 100%;
+}
+
+
+/* =========================================================
+   FILTER BUTTONS
+========================================================= */
+
+.button1,
+.button2 {
+    padding: 10px 30px;
+
+    margin: 10px 5px;
+
+    border-radius: 10px;
+
+    border: 1px solid #222;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.button1 {
+    background-color: white;
+}
+
+.button2 {
+    background-color: #222;
+}
+
+.button1 a,
+.button2 a {
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.button1 a {
+    color: #111;
+}
+
+.button2 a {
+    color: white;
+}
+
+.button1:hover {
+    background-color: #888484;
+}
+
+.button2:hover {
+    background-color: #555;
+}
+
+
+/* =========================================================
+   SHOP ALL POSTER
+========================================================= */
+
+.p {
+    margin: 10px;
+
+    padding-left: 10px;
+
+    font-size: 15px;
+
+    font-weight: normal;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+h3 {
+    padding: 10px;
+
+    letter-spacing: 2px;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   PRODUCT CONTAINER
+========================================================= */
+
+main .container1 {
+    width: 100%;
+
+    padding: 20px;
+
+    display: grid;
+
+    gap: 10px;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(250px, 1fr)
+    );
+
+    background-color: white;
+}
+
+
+/* =========================================================
+   PRODUCT CARD
+========================================================= */
+
+.cards {
+    width: 100%;
+
+    height: 100%;
+
+    border: 2px solid rgb(27, 73, 93);
+
+    background-color: white;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 6px 0 rgb(1, 4, 9);
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   CARD IMAGE BACKGROUND
+========================================================= */
+
+.cards_bg {
+    width: 100%;
+
+    height: 300px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================================
+   CARD IMAGE
+========================================================= */
+
+.card_img {
+    width: 100%;
+
+    height: 100%;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    position: relative;
+
+    margin-top: 5px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================================
+   SALE LABEL
+========================================================= */
+
+.sale {
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 15px;
+
+    background-color: red;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.cards_bg:hover {
+    transform: scale(1.05);
+}
+
+.card_img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.card_content {
+    text-align: center;
+
+    margin: 10px;
+
+    padding: 10px;
+}
+
+.card_content > p:first-child {
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 10px;
+}
+
+.card_content > p:first-child:hover {
+    text-decoration: underline;
+}
+
+
+/* OLD PRICE */
+
+.card_content del {
+    padding: 5px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* SALE PRICE */
+
+.card_content span {
+    padding: 5px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #111;
+}
+
+
+/* =========================================================
+   ADD TO CART BUTTON
+========================================================= */
+
+.card_content .button {
+    margin: 5px 0;
+
+    padding: 10px 60px;
+
+    background-color: black;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.card_content .button:hover {
+    background-color: #777;
+}
+
+
+/* =========================================================
+   20 PRODUCT IMAGES
+========================================================= */
+
+
+/* ---------- WALL SET PACK IMAGES ---------- */
+
+.cards:nth-child(1) .cards_bg {
+    background-image: url("../images/wall_set_pack/1.webp");
+}
+
+.cards:nth-child(2) .cards_bg {
+    background-image: url("../images/wall_set_pack/2.webp");
+}
+
+.cards:nth-child(3) .cards_bg {
+    background-image: url("../images/wall_set_pack/3.webp");
+}
+
+.cards:nth-child(4) .cards_bg {
+    background-image: url("../images/wall_set_pack/3.1.webp");
+}
+
+.cards:nth-child(5) .cards_bg {
+    background-image: url("../images/wall_set_pack/5.1.webp");
+}
+
+.cards:nth-child(6) .cards_bg {
+    background-image: url("../images/wall_set_pack/6.webp");
+}
+
+.cards:nth-child(7) .cards_bg {
+    background-image: url("../images/wall_set_pack/7.webp");
+}
+
+.cards:nth-child(8) .cards_bg {
+    background-image: url("../images/wall_set_pack/8.webp");
+}
+
+.cards:nth-child(9) .cards_bg {
+    background-image: url("../images/wall_set_pack/9.webp");
+}
+
+.cards:nth-child(10) .cards_bg {
+    background-image: url("../images/wall_set_pack/10.webp");
+}
+
+.cards:nth-child(11) .cards_bg {
+    background-image: url("../images/wall_set_pack/11.webp");
+}
+
+.cards:nth-child(12) .cards_bg {
+    background-image: url("../images/wall_set_pack/12.webp");
+}
+
+.cards:nth-child(13) .cards_bg {
+    background-image: url("../images/wall_set_pack/13.webp");
+}
+
+.cards:nth-child(14) .cards_bg {
+    background-image: url("../images/wall_set_pack/14.webp");
+}
+
+.cards:nth-child(15) .cards_bg {
+    background-image: url("../images/wall_set_pack/15.webp");
+}
+
+.cards:nth-child(16) .cards_bg {
+    background-image: url("../images/wall_set_pack/16.webp");
+}
+
+.cards:nth-child(17) .cards_bg {
+    background-image: url("../images/wall_set_pack/17.webp");
+}
+
+.cards:nth-child(18) .cards_bg {
+    background-image: url("../images/wall_set_pack/18.webp");
+}
+
+.cards:nth-child(19) .cards_bg {
+    background-image: url("../images/wall_set_pack/19.1.webp");
+}
+
+.cards:nth-child(20) .cards_bg {
+    background-image: url("../images/wall_set_pack/20.webp");
+}
+
+
+/* ---------- FOUR PIECE IMAGES ---------- */
+
+.cards:nth-child(1) .card_img {
+    background-image: url("../images/4-piece/1_9ac5f738-6163-4f7e-911f-18b203151330.webp");
+}
+
+.cards:nth-child(2) .card_img {
+    background-image: url("../images/4-piece/5_5cbb50fd-dd12-4066-a80e-a288867c2ec5.webp");
+}
+
+.cards:nth-child(3) .card_img {
+    background-image: url("../images/4-piece/CaptainAmericaICanDoThisAllDay4PieceSet_1.webp");
+}
+
+.cards:nth-child(4) .card_img {
+    background-image: url("../images/4-piece/FerrariSF24Formula1WallArt4PieceSet_2.webp");
+}
+
+.cards:nth-child(5) .card_img {
+    background-image: url("../images/4-piece/gym2wall.webp");
+}
+
+.cards:nth-child(6) .card_img {
+    background-image: url("../images/4-piece/gym4wall.webp");
+}
+
+.cards:nth-child(7) .card_img {
+    background-image: url("../images/4-piece/gym5wall.webp");
+}
+
+.cards:nth-child(8) .card_img {
+    background-image: url("../images/4-piece/McLarenMCL38TheCarbonKingsFormula1WallArt4PieceSet_2.webp");
+}
+
+.cards:nth-child(9) .card_img {
+    background-image: url("../images/4-piece/MercedesAMGPetronasPetronasPrecisionFormula1WallArt4PieceSet_2.webp");
+}
+
+.cards:nth-child(10) .card_img {
+    background-image: url("../images/wall_set_pack/10.webp");
+}
+
+.cards:nth-child(11) .card_img {
+    background-image: url("../images/wall_set_pack/11.webp");
+}
+
+.cards:nth-child(12) .card_img {
+    background-image: url("../images/wall_set_pack/12.webp");
+}
+
+.cards:nth-child(13) .card_img {
+    background-image: url("../images/wall_set_pack/13.webp");
+}
+
+.cards:nth-child(14) .card_img {
+    background-image: url("../images/wall_set_pack/14.webp");
+}
+
+.cards:nth-child(15) .card_img {
+    background-image: url("../images/wall_set_pack/15.webp");
+}
+
+.cards:nth-child(16) .card_img {
+    background-image: url("../images/wall_set_pack/16.webp");
+}
+
+.cards:nth-child(17) .card_img {
+    background-image: url("../images/wall_set_pack/17.webp");
+}
+
+.cards:nth-child(18) .card_img {
+    background-image: url("../images/wall_set_pack/18.webp");
+}
+
+.cards:nth-child(19) .card_img {
+    background-image: url("../images/wall_set_pack/19.1.webp");
+}
+
+.cards:nth-child(20) .card_img {
+    background-image: url("../images/wall_set_pack/20.webp");
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    width: 100%;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 60px 50px 20px;
+}
+
+
+/* =========================================================
+   FOOTER MAIN CONTAINER
+========================================================= */
+
+.footer_container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 40px;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #444;
+}
+
+
+/* =========================================================
+   FOOTER BOX
+========================================================= */
+
+.footer_box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer_box h3 {
+    padding: 0;
+
+    margin-bottom: 10px;
+
+    color: white;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+}
+
+.footer_box p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-bottom: 5px;
+}
+
+.footer_box a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.footer_box a:hover {
+    color: white;
+
+    padding-left: 5px;
+}
+
+
+/* =========================================================
+   NEWSLETTER
+========================================================= */
+
+.newsletter {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #444;
+}
+
+.newsletter h2 {
+    font-size: 24px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #aaa;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+
+/* SUBSCRIBE */
+
+.subscribe {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.subscribe input {
+    width: 300px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #555;
+
+    outline: none;
+
+    background-color: white;
+
+    color: #111;
+
+    border-radius: 5px;
+}
+
+.subscribe button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: white;
+
+    color: #111;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: #777;
+
+    color: white;
+}
+
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.why_us {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 35px 0;
+
+    border-bottom: 1px solid #444;
+}
+
+.why_us h3 {
+    padding: 0;
+
+    margin-bottom: 20px;
+
+    font-size: 18px;
+
+    color: white;
+}
+
+.why_items {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.why_items span {
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social_icons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 30px 0;
+}
+
+.social_icons a {
+    width: 40px;
+
+    height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #555;
+
+    border-radius: 50%;
+
+    transition: 0.3s;
+}
+
+.social_icons a:hover {
+    background-color: white;
+
+    color: #111;
+
+    transform: translateY(-3px);
+}
+
+.social_icons i {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   FOOTER LINKS
+========================================================= */
+
+.footer_links {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding: 20px 0;
+
+    border-top: 1px solid #444;
+
+    border-bottom: 1px solid #444;
+}
+
+.footer_links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+.footer_links a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer_bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 25px;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE - 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nav,
+    .navigation {
+        padding: 10px 25px;
+
+        gap: 18px;
+    }
+
+    .logo {
+        width: 230px;
+    }
+
+    .logo_image {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo_name h1 {
+        font-size: 21px;
+    }
+
+    .logo_name p {
+        font-size: 10px;
+    }
+
+    .menu {
+        gap: 14px;
+    }
+
+    .top-menu,
+    .bottom-menu {
+        gap: 14px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .icons {
+        gap: 12px;
+    }
+
+    .popular {
+        justify-content: flex-start;
+
+        gap: 20px;
+    }
+
+    .footer_container {
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 800px
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .announcement {
+        min-height: 32px;
+
+        padding: 7px 10px;
+    }
+
+    .announcement p {
+        font-size: 11px;
+    }
+
+
+    .nav,
+    .navigation {
+        min-height: auto;
+
+        padding: 10px 20px;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+
+
+    .logo {
+        width: auto;
+
+        flex: 1;
+
+        gap: 8px;
+    }
+
+    .logo_image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo_name h1 {
+        font-size: 20px;
+    }
+
+    .logo_name p {
+        font-size: 9px;
+    }
+
+
+    .icons {
+        gap: 8px;
+    }
+
+    .icons span {
+        width: 32px;
+        height: 32px;
+    }
+
+    .icons i {
+        font-size: 18px;
+    }
+
+
+    .menu {
+        width: 100%;
+
+        flex: none;
+
+        order: 3;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+
+        gap: 15px;
+    }
+
+    .menu::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .top-menu,
+    .bottom-menu {
+        width: max-content;
+
+        flex-wrap: nowrap;
+
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    .popular {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        gap: 20px;
+    }
+
+
+    main .container1 {
+        grid-template-columns:
+            repeat(auto-fit, minmax(250px, 1fr));
+
+        padding: 15px;
+    }
+
+
+    .cards_bg {
+        height: 280px;
+    }
+
+
+    .card_content .button {
+        padding: 10px 40px;
+    }
+
+
+    .footer_container {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 35px;
+    }
+
+    footer {
+        padding: 45px 30px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - 500px
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .announcement {
+        min-height: 30px;
+
+        padding: 6px 5px;
+    }
+
+    .announcement p {
+        font-size: 9px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    .nav,
+    .navigation {
+        padding: 12px 15px;
+
+        gap: 8px;
+    }
+
+
+    .logo {
+        gap: 7px;
+    }
+
+    .logo_image {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo_name h1 {
+        font-size: 17px;
+
+        letter-spacing: 1px;
+    }
+
+    .logo_name p {
+        font-size: 8px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .icons {
+        gap: 3px;
+    }
+
+    .icons span {
+        width: 28px;
+        height: 28px;
+    }
+
+    .icons i {
+        font-size: 16px;
+    }
+
+
+    .menu {
+        gap: 15px;
+    }
+
+    .top-menu,
+    .bottom-menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+
+    .popular {
+        min-height: 40px;
+
+        gap: 15px;
+
+        padding: 7px 15px;
+    }
+
+    .popular span,
+    .popular a {
+        font-size: 11px;
+    }
+
+
+    /* FILTER BUTTONS */
+
+    .button1,
+    .button2 {
+        padding: 8px 15px;
+
+        margin: 6px 2px;
+
+        font-size: 12px;
+    }
+
+
+    .p {
+        margin: 8px;
+
+        padding-left: 5px;
+
+        font-size: 13px;
+    }
+
+
+    h3 {
+        padding: 8px;
+
+        font-size: 22px;
+    }
+
+
+    /* PRODUCT GRID */
+
+    main .container1 {
+        width: 100%;
+
+        padding: 10px;
+
+        gap: 10px;
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        background-color: aqua;
+    }
+
+
+    /* CARD */
+
+    .cards {
+        min-width: 0;
+    }
+
+
+    .cards_bg {
+        height: 210px;
+
+        border-radius: 10px;
+    }
+
+
+    .card_img {
+        margin-top: 0;
+    }
+
+
+    .sale {
+        bottom: 10px;
+
+        left: 10px;
+
+        padding: 5px 9px;
+
+        font-size: 11px;
+    }
+
+
+    .card_content {
+        margin: 5px;
+
+        padding: 5px;
+    }
+
+    .card_content > p:first-child {
+        font-size: 11px;
+
+        line-height: 1.4;
+
+        margin-bottom: 7px;
+    }
+
+    .card_content del {
+        font-size: 10px;
+
+        padding: 2px;
+    }
+
+    .card_content span {
+        font-size: 11px;
+
+        padding: 2px;
+    }
+
+
+    .card_content .button {
+        width: 100%;
+
+        padding: 8px 5px;
+
+        font-size: 10px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 20px 15px;
+    }
+
+
+    .footer_container {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .footer_box h3 {
+        font-size: 16px;
+    }
+
+    .footer_box a {
+        font-size: 12px;
+    }
+
+
+    .newsletter {
+        padding: 30px 0;
+    }
+
+    .newsletter h2 {
+        font-size: 18px;
+    }
+
+    .newsletter p {
+        font-size: 12px;
+    }
+
+
+    .subscribe {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .subscribe input {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+    .subscribe button {
+        width: 100%;
+
+        max-width: 350px;
+    }
+
+
+    .why_us {
+        padding: 30px 0;
+    }
+
+    .why_us h3 {
+        font-size: 16px;
+    }
+
+    .why_items {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .why_items span {
+        font-size: 12px;
+    }
+
+
+    .social_icons {
+        gap: 15px;
+
+        padding: 25px 0;
+    }
+
+
+    .footer_links {
+        gap: 15px;
+
+        padding: 18px 0;
+    }
+
+    .footer_links a {
+        font-size: 11px;
+    }
+
+
+    .footer_bottom {
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+
+        padding-top: 20px;
+    }
+
+}

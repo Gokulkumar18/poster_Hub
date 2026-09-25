@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Css/track_your_order.css">
+</head>
+<body>
+    <main>
+        <section class="track-section">
+
+  <div class="track-header">
+    <h2 class="track-title">Track Your Order</h2>
+    <p class="track-subtitle">Enter your order number and email to see the latest status</p>
+  </div>
+
+  <form class="track-form">
+    <div class="form-group">
+      <label class="label" for="orderNumber">Order Number</label>
+      <input class="input" type="text" id="orderNumber" placeholder="e.g. AH-10234" value="AH-10234">
+    </div>
+
+    <div class="form-group">
+      <label class="label" for="orderEmail">Email Address</label>
+      <input class="input" type="email" id="orderEmail" placeholder="you@example.com" value="demo@example.com">
+    </div>
+
+    <button type="submit" class="btn">Track Order</button>
+  </form>
+
+  <div class="order-result">
+
+    <div class="order-summary">
+      <div class="summary-row">
+        <span class="summary-label">Order Number</span>
+        <span class="summary-value">AH-10234</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Order Date</span>
+        <span class="summary-value">14 Sept 2026</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Estimated Delivery</span>
+        <span class="summary-value">22 Sept 2026</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">Status</span>
+        <span class="status-badge">Shipped</span>
+      </div>
+    </div>
+
+    <div class="tracker">
+      <img class="tracker-img" src="../tracker-colorful.svg" alt="Order tracking progress: Order Placed, Processing, Shipped complete; Out for Delivery and Delivered pending">
+    </div>
+
+    <div class="order-items">
+      <p class="items-heading">Items in this order</p>
+
+      <div class="item-row">
+        <div class="item-thumb">
+          <img class="thumb-img" src="../images/8-piece split.jpg" alt="Sunset Gradient print">
+        </div>
+        <div class="item-info">
+          <p class="item-name">Sunset Gradient | Abstract Line Art Print</p>
+          <p class="item-meta">Size: A3 · Qty: 1</p>
+        </div>
+        <span class="item-price">Rs. 399.00</span>
+      </div>
+
+      <div class="item-row">
+        <div class="item-thumb">
+          <img class="thumb-img" src="../images/4-piece/CaptainAmericaICanDoThisAllDay4PieceSet_1.webp" alt="Mountain Fog print">
+        </div>
+        <div class="item-info">
+          <p class="item-name">Mountain Fog | Nature Photography Print</p>
+          <p class="item-meta">Size: A4 · Qty: 2</p>
+        </div>
+        <span class="item-price">Rs. 898.00</span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+    </main>
+    
+</body>
+</html>

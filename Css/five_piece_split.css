@@ -1,0 +1,1254 @@
+/* ================================================= */
+/* ================= RESET ========================= */
+/* ================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+
+/* ================================================= */
+/* ================= ANNOUNCEMENT ================== */
+/* ================================================= */
+
+.announcement {
+    width: 100%;
+    min-height: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111;
+    color: white;
+
+    padding: 8px 15px;
+
+    text-align: center;
+}
+
+.announcement p {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+
+/* ================================================= */
+/* ================= NAV =========================== */
+/* ================================================= */
+
+.nav {
+    width: 100%;
+    min-height: 115px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 10px 40px;
+
+    background-color: rgb(225, 213, 213);
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ================================================= */
+/* ================= LOGO ========================== */
+/* ================================================= */
+
+.logo {
+    width: 280px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* PERFECT CIRCLE */
+
+.logo_image {
+    width: 65px;
+    height: 65px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.logo_image img {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+.logo_name {
+    white-space: nowrap;
+}
+
+.logo_name h1 {
+    font-size: 24px;
+
+    margin: 0;
+
+    letter-spacing: 1px;
+}
+
+.logo_name p {
+    font-size: 11px;
+
+    margin-top: 3px;
+
+    letter-spacing: 3px;
+}
+
+
+/* ================================================= */
+/* ================= MENU ========================== */
+/* ================================================= */
+
+.menu {
+    flex: 1;
+
+    min-width: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.top-menu,
+.bottom-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.top-menu {
+    flex-wrap: wrap;
+}
+
+.bottom-menu {
+    gap: 25px;
+}
+
+.menu a {
+    color: #111;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #777;
+}
+
+
+/* ================================================= */
+/* ================= ICONS ========================= */
+/* ================================================= */
+
+.icons {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 22px;
+
+    flex-shrink: 0;
+}
+
+.icons span {
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    font-size: 21px;
+
+    transition: 0.3s;
+}
+
+.icons span:hover {
+    transform: scale(1.15);
+}
+
+
+/* ================================================= */
+/* ================= POPULAR ======================= */
+/* ================================================= */
+
+.popular {
+    width: 100%;
+
+    min-height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 8px 20px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #ddd;
+
+    overflow-x: auto;
+
+    white-space: nowrap;
+
+    scrollbar-width: none;
+}
+
+.popular::-webkit-scrollbar {
+    display: none;
+}
+
+.popular span {
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.popular a {
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.popular a:hover {
+    color: #888;
+}
+
+
+/* ================================================= */
+/* ================= HEADING ======================= */
+/* ================================================= */
+
+h3 {
+    padding: 10px;
+
+    letter-spacing: 2px;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.p {
+    margin: 10px;
+
+    padding-left: 10px;
+}
+
+
+/* ================================================= */
+/* ================= BUTTON 1 ====================== */
+/* ================================================= */
+
+.button1 {
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+}
+
+.button1:active {
+    color: green;
+}
+
+.button1:hover {
+    background-color: #888484;
+}
+
+.button1 > a {
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* ================================================= */
+/* ================= BUTTON 2 ====================== */
+/* ================================================= */
+
+.button2 {
+    padding: 10px 30px;
+
+    border-radius: 10px;
+
+    margin: 10px;
+
+    background-color: #222;
+}
+
+.button2:active {
+    color: green;
+}
+
+.button2:hover {
+    background-color: #888484;
+}
+
+.button2 > a {
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: white;
+}
+
+
+/* ================================================= */
+/* ============== FIVE PIECE CONTAINER ============= */
+/* ================================================= */
+
+.five_piece_container1 {
+    width: 100%;
+
+    padding: 20px;
+
+    display: grid;
+
+    gap: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    background-color: white;
+}
+
+
+/* ================================================= */
+/* ================= CARDS ========================= */
+/* ================================================= */
+
+.cards {
+    height: 100%;
+
+    border: 2px solid rgb(27, 73, 93);
+
+    background-color: white;
+
+    overflow: hidden;
+
+    box-shadow: 0 3px 6px 0 rgb(1, 4, 9);
+
+    border-radius: 5px;
+}
+
+
+/* ================================================= */
+/* ================= CARDS BG ====================== */
+/* ================================================= */
+
+.cards_bg {
+    width: 100%;
+
+    height: 300px;
+
+    border-radius: 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ================================================= */
+/* ============== CARD IMAGE ======================= */
+/* ================================================= */
+
+.card_img {
+    width: 100%;
+
+    height: 100%;
+
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-size: cover;
+
+    position: relative;
+
+    margin-top: 5px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ================================================= */
+/* ============== CARD IMAGES ====================== */
+/* ================================================= */
+
+.cards:nth-child(1) .card_img {
+    background-image: url("../images/5-piece/1.webp");
+}
+
+.cards:nth-child(2) .card_img {
+    background-image: url("../images/5-piece/2.webp");
+}
+
+.cards:nth-child(3) .card_img {
+    background-image: url("../images/5-piece/3.jpg");
+}
+
+.cards:nth-child(4) .card_img {
+    background-image: url("../images/5-piece/4.webp");
+}
+
+.cards:nth-child(5) .card_img {
+    background-image: url("../images/5-piece/5.webp");
+}
+
+.cards:nth-child(6) .card_img {
+    background-image: url("../images/5-piece/6.webp");
+}
+
+.cards:nth-child(7) .card_img {
+    background-image: url("../images/5-piece/7.jpg");
+}
+
+.cards:nth-child(8) .card_img {
+    background-image: url("../images/5-piece/8.webp");
+}
+
+.cards:nth-child(9) .card_img {
+    background-image: url("../images/5-piece/9.webp");
+}
+
+.cards:nth-child(10) .card_img {
+    background-image: url("../images/5-piece/10.webp");
+}
+
+.cards:nth-child(11) .card_img {
+    background-image: url("../images/5-piece/11.jpg");
+}
+
+.cards:nth-child(12) .card_img {
+    background-image: url("../images/5-piece/12.webp");
+}
+
+.cards:nth-child(13) .card_img {
+    background-image: url("../images/5-piece/13.jpg");
+}
+
+.cards:nth-child(14) .card_img {
+    background-image: url("../images/5-piece/14.webp");
+}
+
+.cards:nth-child(15) .card_img {
+    background-image: url("../images/5-piece/15.jpg");
+}
+
+.cards:nth-child(16) .card_img {
+    background-image: url("../images/5-piece/16.webp");
+}
+
+.cards:nth-child(17) .card_img {
+    background-image: url("../images/5-piece/17.webp");
+}
+
+.cards:nth-child(18) .card_img {
+    background-image: url("../images/5-piece/18.webp");
+}
+
+.cards:nth-child(19) .card_img {
+    background-image: url("../images/5-piece/19.webp");
+}
+
+.cards:nth-child(20) .card_img {
+    background-image: url("../images/5-piece/20.webp");
+}
+
+
+/* ================================================= */
+/* ================= HOVER ========================= */
+/* ================================================= */
+
+.cards_bg:hover {
+    transform: scale(1.02);
+}
+
+.card_img:hover {
+    transform: scale(1.05);
+}
+
+
+/* ================================================= */
+/* ================= SALE ========================== */
+/* ================================================= */
+
+.sale {
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 15px;
+
+    background-color: red;
+
+    color: white;
+
+    padding: 8px 15px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    border-radius: 5px;
+}
+
+
+/* ================================================= */
+/* ================= CARD CONTENT ================== */
+/* ================================================= */
+
+.card_content {
+    text-align: center;
+
+    margin: 10px;
+
+    padding: 10px;
+}
+
+.card_content p:hover {
+    text-decoration: underline;
+}
+
+.card_content span {
+    padding: 5px;
+
+    font-weight: bold;
+}
+
+.card_content del {
+    padding: 5px;
+}
+
+
+/* ================================================= */
+/* ================= CARD BUTTON =================== */
+/* ================================================= */
+
+.button {
+    margin: 5px 0px;
+
+    padding: 10px 60px;
+
+    background-color: black;
+
+    color: white;
+
+    border-radius: 5px;
+
+    border: none;
+}
+
+.button:hover {
+    background-color: #888484;
+}
+
+
+/* ================================================= */
+/* ================= FOOTER ======================== */
+/* ================================================= */
+
+footer {
+    width: 100%;
+
+    background-color: #111;
+
+    color: white;
+
+    padding: 60px 50px 20px;
+}
+
+
+/* ================================================= */
+/* ============== FOOTER CONTAINER ================= */
+/* ================================================= */
+
+.footer_container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 50px;
+
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid #444;
+}
+
+
+/* ================================================= */
+/* ================= FOOTER BOX ==================== */
+/* ================================================= */
+
+.footer_box {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.footer_box h3 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+
+    padding: 0;
+
+    letter-spacing: 1px;
+}
+
+.footer_box p {
+    font-size: 14px;
+
+    color: #aaa;
+
+    margin-bottom: 10px;
+}
+
+.footer_box a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.footer_box a:hover {
+    color: white;
+}
+
+
+/* ================================================= */
+/* ================= NEWSLETTER ==================== */
+/* ================================================= */
+
+.newsletter {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    border-bottom: 1px solid #444;
+}
+
+.newsletter h2 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    color: #aaa;
+
+    margin-bottom: 25px;
+}
+
+.subscribe {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.subscribe input {
+    width: 300px;
+
+    padding: 13px;
+
+    border: none;
+
+    outline: none;
+
+    cursor: text;
+}
+
+.subscribe button {
+    padding: 13px 25px;
+
+    border: none;
+
+    background-color: white;
+
+    color: black;
+
+    cursor: pointer;
+}
+
+.subscribe button:hover {
+    background-color: #ddd;
+}
+
+
+/* ================================================= */
+/* ================= WHY US ======================== */
+/* ================================================= */
+
+.why_us {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-bottom: 1px solid #444;
+}
+
+.why_us h3 {
+    margin-bottom: 25px;
+
+    padding: 0;
+
+    color: white;
+}
+
+.why_items {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+.why_items span {
+    color: #ccc;
+
+    font-size: 14px;
+}
+
+
+/* ================================================= */
+/* ================= SOCIAL ICONS ================== */
+/* ================================================= */
+
+.social_icons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    padding: 35px 0;
+}
+
+.social_icons a {
+    color: white;
+
+    font-size: 25px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.social_icons a:hover {
+    transform: scale(1.2);
+}
+
+
+/* ================================================= */
+/* ================= FOOTER LINKS ================== */
+/* ================================================= */
+
+.footer_links {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    padding-bottom: 25px;
+}
+
+.footer_links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+}
+
+.footer_links a:hover {
+    color: white;
+}
+
+
+/* ================================================= */
+/* ================= COPYRIGHT ===================== */
+/* ================================================= */
+
+.footer_bottom {
+    text-align: center;
+
+    border-top: 1px solid #444;
+
+    padding-top: 20px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+.footer_bottom p {
+    margin: 5px 0;
+}
+
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 1100px) {
+
+    .nav {
+        padding: 10px 25px;
+
+        gap: 18px;
+    }
+
+    .logo {
+        width: 230px;
+    }
+
+    .logo_image,
+    .logo_image img {
+        width: 55px;
+
+        height: 55px;
+    }
+
+    .logo_name h1 {
+        font-size: 21px;
+    }
+
+    .logo_name p {
+        font-size: 10px;
+    }
+
+    .top-menu,
+    .bottom-menu {
+        gap: 14px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .icons {
+        gap: 12px;
+    }
+
+    .popular {
+        justify-content: flex-start;
+
+        gap: 20px;
+    }
+
+    .five_piece_container1 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .button1,
+    .button2 {
+        padding: 9px 20px;
+
+        margin: 7px;
+    }
+
+    .footer_container {
+        gap: 30px;
+    }
+}
+
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media (max-width: 800px) {
+
+    .announcement {
+        min-height: 32px;
+    }
+
+    .announcement p {
+        font-size: 11px;
+    }
+
+
+    /* NAV */
+
+    .nav {
+        min-height: auto;
+
+        flex-wrap: wrap;
+
+        padding: 15px 20px;
+
+        gap: 15px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        width: auto;
+
+        flex: 1;
+    }
+
+    .logo_image,
+    .logo_image img {
+        width: 50px;
+
+        height: 50px;
+    }
+
+    .logo_name h1 {
+        font-size: 20px;
+    }
+
+    .logo_name p {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+
+    /* ICONS */
+
+    .icons {
+        gap: 8px;
+    }
+
+    .icons span {
+        width: 32px;
+
+        height: 32px;
+
+        font-size: 18px;
+    }
+
+
+    /* MENU */
+
+    .menu {
+        width: 100%;
+
+        order: 3;
+
+        gap: 12px;
+    }
+
+    .top-menu,
+    .bottom-menu {
+        width: 100%;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+        gap: 18px;
+
+        padding-bottom: 5px;
+
+        scrollbar-width: none;
+    }
+
+    .top-menu::-webkit-scrollbar,
+    .bottom-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    /* POPULAR */
+
+    .popular {
+        justify-content: flex-start;
+
+        gap: 18px;
+
+        padding: 10px 15px;
+    }
+
+    .popular a,
+    .popular span {
+        font-size: 12px;
+    }
+
+
+    /* BUTTONS */
+
+    .button1,
+    .button2 {
+        padding: 9px 15px;
+
+        margin: 5px;
+    }
+
+
+    /* HEADING */
+
+    h3 {
+        font-size: 24px;
+    }
+
+
+    /* CARDS */
+
+    .five_piece_container1 {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 15px;
+
+        gap: 15px;
+    }
+
+    .cards_bg {
+        height: 260px;
+    }
+
+    .button {
+        padding: 10px 30px;
+    }
+
+
+    /* FOOTER */
+
+    .footer_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================================================= */
+/* ================= SMALL MOBILE ================== */
+/* ================================================= */
+
+@media (max-width: 500px) {
+
+    .nav {
+        padding: 12px 15px;
+    }
+
+
+    /* LOGO */
+
+    .logo {
+        gap: 7px;
+    }
+
+    .logo_image,
+    .logo_image img {
+        width: 42px;
+
+        height: 42px;
+    }
+
+    .logo_name h1 {
+        font-size: 17px;
+    }
+
+    .logo_name p {
+        font-size: 8px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    /* ICONS */
+
+    .icons {
+        gap: 3px;
+    }
+
+    .icons span {
+        width: 28px;
+
+        height: 28px;
+
+        font-size: 16px;
+    }
+
+
+    /* MENU */
+
+    .top-menu,
+    .bottom-menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+
+
+    /* POPULAR */
+
+    .popular {
+        min-height: 40px;
+
+        gap: 15px;
+    }
+
+
+    /* BUTTONS */
+
+    .button1,
+    .button2 {
+        padding: 8px 10px;
+
+        margin: 3px;
+
+        font-size: 11px;
+    }
+
+
+    /* HEADING */
+
+    h3 {
+        font-size: 20px;
+
+        padding: 8px;
+    }
+
+
+    /* CARDS */
+
+    .five_piece_container1 {
+        grid-template-columns: 1fr;
+
+        padding: 10px;
+    }
+
+    .cards_bg {
+        height: 300px;
+    }
+
+    .card_content {
+        margin: 5px;
+
+        padding: 8px;
+    }
+
+    .button {
+        width: 100%;
+
+        padding: 10px 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 40px 25px 20px;
+    }
+
+    .footer_container {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+    .social_icons {
+        gap: 20px;
+    }
+
+}
